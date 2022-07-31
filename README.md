@@ -1,2 +1,64 @@
 # trademapper
 Container for trademapper
+
+# Info
+
+This repo inlcudes the original trademapper repository with the addition of a Dockerfile to support the creation of a container and a nginx.conf file to allow the configuration of nginx inside the container.
+
+The trademapper code base is from master.
+
+# Usage
+
+From the root directory run `docker build -t trademapper:0.1 .` to build the container image; run `docker run -d -p 80:80 trademapper:0.1` to start the container .
+
+Remember any changes to the codebase will require a new docker build and new docker run ( remember to kill the previosu container )
+
+If you decide to use the original codebase, simply copy across the Dockerfile and the nginx.conf file ( that's all is needed )
+
+Below original trademapper README content
+
+trademapper-js
+==============
+
+Javascript application and libraries for mapping international trade using
+[d3.js](http://d3js.org/)  It runs in the browser, and you can import data
+from CSV files, view the trade on the map, filter by various columns, and
+zoom and pan around the resulting map.
+
+![TradeMapper in action](https://raw.githubusercontent.com/trademapper/trademapper-js/master/screenshot/trademapper.png)
+
+What is TradeMapper?
+--------------------
+
+The illegal trade in wildlife threatens some of our planet’s most iconic
+species such as rhinos, tigers and elephants, and evolves rapidly; taking
+advantage of new routes and other opportunities to avoid detection. To
+understand and manage the ever-changing trade effectively, scientists and
+conservationists need to work with large volumes of data that describe
+international movement of wildlife and wildlife products (like ivory and rhino
+horn). This helps them understand the spatial patterns of trade, and determine
+what factors are influencing it and how these can be addressed.  These findings
+then need to be communicated clearly and effectively with decision-makers and
+the public.  Only then can solutions be found, and wildlife protected.
+
+To help, we built TradeMapper: an open source interactive browser-based tool
+that maps international wildlife trade flow data, allowing users to visualise
+the global trade in wildlife.  TradeMapper offers a way to explore trends, both
+historical and geographical, in a way that is simply impossible when dealing
+with dry numerical data in a spreadsheet.
+
+But ultimately, TradeMapper is not limited to wildlife data - it can map
+international trade of any variety.
+
+Digging deeper
+--------------
+
+Join our [google group](https://groups.google.com/d/forum/trademapper).
+
+We have more detailed information on the [wiki](https://github.com/trademapper/trademapper-js/wiki), including:
+
+* [How to use TradeMapper](https://github.com/trademapper/trademapper-js/wiki/How-to-use-trademapper)
+* [Getting set up for development](https://github.com/trademapper/trademapper-js/wiki/Development)
+* [A guide to the code](https://github.com/trademapper/trademapper-js/wiki/Guide-to-the-code)
+
+
